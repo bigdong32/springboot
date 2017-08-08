@@ -5,6 +5,5 @@ ARG jarFile=springboot-1.0-SNAPSHOT.jar
 ARG http_port=8081
 COPY ${jarFile} /projects/
 
-WORKDIR /projects/
 EXPOSE ${http_port}
-ENTRYPOINT ["java", "-jar", ${jarFile}, "&"]
+ENTRYPOINT ["java", "-jar", "/projects/springboot-1.0-SNAPSHOT.jar", "&"]
