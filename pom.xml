@@ -145,6 +145,7 @@
                 <directory>docker/</directory>
                 <includes>
                     <include>Dockerfile</include>
+                    <include>dockerRun.sh</include>
                 </includes>
                 <targetPath>../</targetPath>
             </resource>
